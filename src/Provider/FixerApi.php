@@ -16,9 +16,14 @@ class FixerApi implements ProviderInterface
      *
      * @var string
      */
-    //const FIXER_API_BASEPATH = 'https://api.fixer.io/latest';
-
-    const FIXER_API_BASEPATH = 'http://data.fixer.io/api/latest?access_key=1331a59e956ebdada527edfdbcf77db7&format=1';
+    const FIXER_API_BASEPATH = 'https://api.fixer.io/latest';
+    
+    /**
+     * Fixer api access key
+     *
+     * @var string
+     *
+    const ACCESS_KEY = '1331a59e956ebdada527edfdbcf77db7';
 
     /**
      * @var Client
@@ -40,7 +45,8 @@ class FixerApi implements ProviderInterface
     public function getRate($fromCurrency, $toCurrency)
     {
         $path = sprintf(
-            self::FIXER_API_BASEPATH . '?symbols=%s&base=%s',
+            self::FIXER_API_BASEPATH . '?access_key=%ssymbols=%s&base=%s',
+            self::ACCESS_KEY,
             $toCurrency,
             $fromCurrency
         );
