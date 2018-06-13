@@ -22,7 +22,7 @@ class FixerApi implements ProviderInterface
      * Fixer api access key
      *
      * @var string
-     *
+     */
     const ACCESS_KEY = '1331a59e956ebdada527edfdbcf77db7';
 
     /**
