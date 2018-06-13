@@ -16,7 +16,7 @@ class FixerApi implements ProviderInterface
      *
      * @var string
      */
-    const FIXER_API_BASEPATH = 'https://api.fixer.io/latest';
+    const FIXER_API_BASEPATH = 'https://data.fixer.io/api/latest';
     
     /**
      * Fixer api access key
